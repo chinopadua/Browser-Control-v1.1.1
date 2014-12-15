@@ -20,7 +20,7 @@ var ModalEffects = (function() {
 				close = modal.querySelector( '.md-close' );
 
 			function removeModal( hasPerspective ) {
-				classie.remove( modal, 'md-show' );
+				classie.remove( modal, 'md-show', 'md-show2' );
 
 				if( hasPerspective ) {
 					classie.remove( document.documentElement, 'md-perspective' );
@@ -32,7 +32,7 @@ var ModalEffects = (function() {
 			}
 
 			el.addEventListener( 'click', function( ev ) {
-				classie.add( modal, 'md-show' );
+				classie.add( modal, 'md-show', 'md-show2' );
 				overlay.removeEventListener( 'click', removeModalHandler );
 				overlay.addEventListener( 'click', removeModalHandler );
 
