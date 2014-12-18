@@ -34,7 +34,6 @@
 			<!-- Push Wrapper -->
 			<div class="mp-pusher" id="mp-pusher">
 
-				<!-- mp-menu -->
 				<nav id="mp-menu" class="mp-menu">
 					<div class="mp-level">
 						<h2 class="fa fa-tachometer"><img src="static/images/blox_logo.png" class="navbar-brand-logo page-scroll marginleft50"></h2>
@@ -42,39 +41,28 @@
 							<li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
 							<li><a href="#"><i class="fa fa-video-camera"></i> Video</a></li>
 							<li><a href="#"><i class="fa fa-music"></i> Music</a></li>
-							<li><a href="pictures.html"><i class="fa fa-picture-o"></i> Picture</a></li>
+							<li><a href="picture.html"><i class="fa fa-picture-o"></i> Picture</a></li>
 							<li><a href="#"><i class="fa fa-share-alt"></i> Share Files</a></li>
-
-							<li class="icon left">
-								<a href="#"><i class="fa fa-user"></i> Your Blox</a>
-								<div class="mp-level">
-									<h2><i class="fa fa-user marginleft40"></i> Your Blox</h2>
-									<a class="mp-back" href="#">back</a>
-									<ul>
-										<li><a href="#"><i class="fa fa-pencil-square-o"></i> Edit Profile</a></li>
-										<li><a href="#"><i class="fa fa-cog"></i> Customize</a></li>
-										<li><a href="#"><i class="fa fa-user"></i> Account</a></li>
-										<li><a href="#"><i class="fa fa-unlock-alt"></i> Logout</a></li><!-- if logged -->
-										</ul>
-								</div>
-							</li>
-
-							<li class="icon left">
-								<a href="#"><i class="fa fa-plus-square"></i> Others</a>
-								<div class="mp-level">
-									<h2><i class="fa fa-plus-square marginleft70"></i> Other</h2>
-									<a class="mp-back" href="#">back</a>
-									<ul>
-										<li><a href="#"><i class="fa fa-signal"></i> Connect Using</a></li>
-										<li><a href="#"><i class="fa fa-power-off"></i> Power</a></li>
-									</ul>
-								</div>
-							</li>
-
+							<li><a href="#"><i class="fa fa-credit-card"></i> Print a Wifi Card</a></li>
+							<li><a href="#" class="md-trigger" data-modal="modal-1"><i class="fa fa-power-off"></i> Power</a></li>
+							<li><a href="#" class="md-trigger" data-modal="modal-2"><i class="fa fa-phone"></i> Contact us</a></li>
 						</ul>	
-							
 					</div>
 				</nav><!-- /mp-menu -->
+
+				<!-- right-menu -->
+				<div class="menu-wrap">
+					<nav class="menu">
+						<div class="icon-list">
+							<a href="#" id="close-button"><i class="fa"><img class="rightsidelogoinside" src="static/images/bloxlogowhite.png"></i></a>
+							<a href="#"><i class="fa fa-fw fa-user fa-2x"></i></a>
+							<a href="#"><i class="fa fa-fw fa-envelope-o fa-2x"></i></a>
+							<a href="#"><i class="fa fa-fw fa-comment-o fa-2x"></i></a>
+							<a href="#"><i class="fa fa-fw fa-bell-o fa-2x"></i></a>
+							<a href="#"><i class="fa fa-fw fa-signal fa-2x"></i></a>
+						</div>
+					</nav>
+				</div><!-- /right-menu -->
 
 				<div class="scroller"><!-- this is for emulating position fixed of the nav -->
 					<div class="scroller-inner">
@@ -84,6 +72,7 @@
 							<div class="block block-40 clearfix">
 								<!-- Menu Trigger -->
 								<a href="#" id="trigger" class="menu-triggeronwhite"></a><!-- //Menu Trigger -->
+								<a href="#" id="open-button" class="menu-button"><img class="rightsidelogo" id="fadeinoutinstant" src="static/images/bloxlogoblack.png"></a>
 							</div>
 						</div>
 
@@ -95,63 +84,94 @@
 						<div class="content clearfix">
 						<!-- Content Body HERE -->
 
-						<div class="centerdiv">
-							<div class="inline"><a href="#"><button class="btnchino btnchino-8 btnchino-8c">Back</button></a></div>
-							<div class="inline"><a href="#"><button class="btnchino btnchino-8 btnchino-8a">Create</button></a></div>
-							<div class="inline"><a href="#"><button class="btnchino btnchino-8 btnchino-8d">Edit</button></a></div>
-						</div>
+							<div class="centerdiv">
+								<div class="inline"><a href="#"><button class="btnchino btnchino-8 btnchino-8c">Back</button></a></div>
+								<div class="inline"><a href="#"><button class="btnchino btnchino-8 btnchino-8a">Create</button></a></div>
+								<div class="inline"><a href="#"><button class="btnchino btnchino-8 btnchino-8d">Edit</button></a></div>
+							</div>
 
-						<div id="gallery">
-						<ul class="grid effect-2" id="grid">
-							<li><a href="static/images/1.jpg" rel="external"><img src="static/images/1.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/3.jpg" rel="external"><img src="static/images/3.jpg" alt="Dogg"></a></li>
-							<li><a href="static/images/4.jpg" rel="external"><img src="static/images/4.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/12.jpg" rel="external"><img src="static/images/12.jpg" alt="Wala ko selfie promise"></a></li>
-							<li><a href="static/images/13.jpg" rel="external"><img src="static/images/13.jpg" alt="Richie"></a></li>
-							<li><a href="static/images/10.jpg" rel="external"><img src="static/images/10.jpg" alt="Yihaaaa!"></a></li>
-							<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/2.jpg" rel="external"><img src="static/images/2.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/14.jpg" rel="external"><img src="static/images/14.jpg" alt="Puppy Dogg"></a></li>
-							<li><a href="static/images/5.jpg" rel="external"><img src="static/images/5.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/6.jpg" rel="external"><img src="static/images/6.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/7.jpg" rel="external"><img src="static/images/7.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/8.jpg" rel="external"><img src="static/images/8.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/17.jpg" rel="external"><img src="static/images/17.jpg" alt="CJ"></a></li>
-							<li><a href="static/images/19.jpg" rel="external"><img src="static/images/19.jpg" alt="The Who"></a></li>
-							<li><a href="static/images/20.jpg" rel="external"><img src="static/images/20.jpg" alt="Marcos Hiway"></a></li>
-							<li><a href="static/images/21.jpg" rel="external"><img src="static/images/21.jpg" alt="Marcos Hiway"></a></li>
-							<li><a href="static/images/1.jpg" rel="external"><img src="static/images/1.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/3.jpg" rel="external"><img src="static/images/3.jpg" alt="Dogg"></a></li>
-							<li><a href="static/images/4.jpg" rel="external"><img src="static/images/4.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/12.jpg" rel="external"><img src="static/images/12.jpg" alt="Wala ko selfie promise"></a></li>
-							<li><a href="static/images/13.jpg" rel="external"><img src="static/images/13.jpg" alt="Richie"></a></li>
-							<li><a href="static/images/10.jpg" rel="external"><img src="static/images/10.jpg" alt="Yihaaaa!"></a></li>
-							<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/2.jpg" rel="external"><img src="static/images/2.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/14.jpg" rel="external"><img src="static/images/14.jpg" alt="Puppy Dogg"></a></li>
-							<li><a href="static/images/5.jpg" rel="external"><img src="static/images/5.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/6.jpg" rel="external"><img src="static/images/6.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/7.jpg" rel="external"><img src="static/images/7.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/8.jpg" rel="external"><img src="static/images/8.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
-							<li><a href="static/images/17.jpg" rel="external"><img src="static/images/17.jpg" alt="CJ"></a></li>
-							<li><a href="static/images/19.jpg" rel="external"><img src="static/images/19.jpg" alt="The Who"></a></li>
-							<li><a href="static/images/20.jpg" rel="external"><img src="static/images/20.jpg" alt="Marcos Hiway"></a></li>
-							<li><a href="static/images/21.jpg" rel="external"><img src="static/images/21.jpg" alt="Marcos Hiway"></a></li>
-						</ul>
-					</div>
-
-
+							<div id="gallery">
+								<ul class="grid effect-2" id="grid">
+									<li><a href="static/images/1.jpg" rel="external"><img src="static/images/1.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/3.jpg" rel="external"><img src="static/images/3.jpg" alt="Dogg"></a></li>
+									<li><a href="static/images/4.jpg" rel="external"><img src="static/images/4.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/12.jpg" rel="external"><img src="static/images/12.jpg" alt="Wala ko selfie promise"></a></li>
+									<li><a href="static/images/13.jpg" rel="external"><img src="static/images/13.jpg" alt="Richie"></a></li>
+									<li><a href="static/images/10.jpg" rel="external"><img src="static/images/10.jpg" alt="Yihaaaa!"></a></li>
+									<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/2.jpg" rel="external"><img src="static/images/2.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/14.jpg" rel="external"><img src="static/images/14.jpg" alt="Puppy Dogg"></a></li>
+									<li><a href="static/images/5.jpg" rel="external"><img src="static/images/5.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/6.jpg" rel="external"><img src="static/images/6.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/7.jpg" rel="external"><img src="static/images/7.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/8.jpg" rel="external"><img src="static/images/8.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/17.jpg" rel="external"><img src="static/images/17.jpg" alt="CJ"></a></li>
+									<li><a href="static/images/19.jpg" rel="external"><img src="static/images/19.jpg" alt="The Who"></a></li>
+									<li><a href="static/images/20.jpg" rel="external"><img src="static/images/20.jpg" alt="Marcos Hiway"></a></li>
+									<li><a href="static/images/21.jpg" rel="external"><img src="static/images/21.jpg" alt="Marcos Hiway"></a></li>
+									<li><a href="static/images/1.jpg" rel="external"><img src="static/images/1.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/3.jpg" rel="external"><img src="static/images/3.jpg" alt="Dogg"></a></li>
+									<li><a href="static/images/4.jpg" rel="external"><img src="static/images/4.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/12.jpg" rel="external"><img src="static/images/12.jpg" alt="Wala ko selfie promise"></a></li>
+									<li><a href="static/images/13.jpg" rel="external"><img src="static/images/13.jpg" alt="Richie"></a></li>
+									<li><a href="static/images/10.jpg" rel="external"><img src="static/images/10.jpg" alt="Yihaaaa!"></a></li>
+									<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/2.jpg" rel="external"><img src="static/images/2.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/14.jpg" rel="external"><img src="static/images/14.jpg" alt="Puppy Dogg"></a></li>
+									<li><a href="static/images/5.jpg" rel="external"><img src="static/images/5.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/6.jpg" rel="external"><img src="static/images/6.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/7.jpg" rel="external"><img src="static/images/7.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/8.jpg" rel="external"><img src="static/images/8.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/9.jpg" rel="external"><img src="static/images/9.jpg" alt="Image1"></a></li>
+									<li><a href="static/images/17.jpg" rel="external"><img src="static/images/17.jpg" alt="CJ"></a></li>
+									<li><a href="static/images/19.jpg" rel="external"><img src="static/images/19.jpg" alt="The Who"></a></li>
+									<li><a href="static/images/20.jpg" rel="external"><img src="static/images/20.jpg" alt="Marcos Hiway"></a></li>
+									<li><a href="static/images/21.jpg" rel="external"><img src="static/images/21.jpg" alt="Marcos Hiway"></a></li>
+								</ul>
+							</div>
 						</div>
 					</div><!-- /scroller-inner -->
 				</div><!-- /scroller -->
-
 			</div><!-- /pusher -->
 		</div><!-- /container -->
 
-
-
+		<!-- Power -->
+		<div class="md-modal md-effect-15" id="modal-1">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Were sorry but we need a Password</h3>
+					<form action="power.html">
+						<input class="margintop10" type="password" pattern="blox" defaultvalue placeholder="blox" required>
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Ok</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Power -->
+		<!-- Contact us -->
+		<div class="md-modal md-effect-15" id="modal-2">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Contact us</h3>
+					<div class="centerdiv marginbottom20">
+						<a href="https://www.facebook.com/bloxph" target="_blank"><i class="fa fa-facebook-square fa-3x marginlr10"></i></a>
+						<a href="https://www.twitter.com/bloxph" target="_blank"><i class="fa fa-twitter-square fa-3x marginlr10"></i></a>
+						<a href="http://instagram.com/bloxph/" target="_blank"><i class="fa fa-instagram fa-3x marginlr10"></i></a>
+					</div>
+					<div class="centerdiv">
+						<a href="www.bloxentertainment.com">www.bloxentertainment.com</a>
+					</div>	
+					<div class="centerdiv">
+						<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Customer Support</button></a>
+						<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///Contact us -->
+		<div class="md-overlay"></div><!-- the overlay element -->
 
 		<script src="static/js/masonry.pkgd.min.js"></script>
 		<script src="static/js/imagesloaded.js"></script>
@@ -181,18 +201,22 @@
 				});
 			}(window, window.jQuery, window.Code.PhotoSwipe));
 		</script>
-
-
-
-
 		
 		<!-- JS Base -->
-		<script src="static/js/bootstrap.min.js"></script>
+		<script src="static/js/modalEffects.js"></script>
 		<script src="static/js/jquery-min.js"></script>
 		<script src="static/js/classie.js"></script>
 		<script src="static/js/mlpushmenu.js"></script>
 		<script>
 			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+		</script>
+		<script src="static/js/rightmenu.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("img").click(function(){
+		    $("#fadeinoutinstant").fadeToggle();
+		  });
+		});
 		</script>
 	</body>
 </html>
