@@ -231,6 +231,11 @@ a:hover, a:focus {
   margin-left: 10px;
 }
 
+.marginlr5 {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
 .marginlr10 {
   margin-left: 10px;
   margin-right: 10px;
