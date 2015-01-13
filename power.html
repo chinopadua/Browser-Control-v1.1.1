@@ -10,8 +10,8 @@
 		<link rel="shortcut icon" href="static/images/favicon5.png">
 		<!-- Base--> 
 		<link rel="stylesheet" href="static/css/chino.css"> 
-		
 		<link rel="stylesheet" type="text/css" href="static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/tooltip-classic.css" />
 		<script src="static/js/modernizr.custom.js"></script>
 
 		<!-- Icons--> 
@@ -29,13 +29,14 @@
 						<h2 class="fa fa-tachometer"><img src="static/images/blox_logo.png" class="navbar-brand-logo page-scroll marginleft50"></h2>
 						<ul>
 							<li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
-							<li><a href="#"><i class="fa fa-video-camera"></i> Video</a></li>
-							<li><a href="#"><i class="fa fa-music"></i> Music</a></li>
+							<li><a href="http://192.168.2.253:32400/web/index.html"><i class="fa fa-video-camera"></i> Video</a></li>
+							<li><a href="http://192.168.2.253:4040/"><i class="fa fa-music"></i> Music</a></li>
 							<li><a href="picture.html"><i class="fa fa-picture-o"></i> Picture</a></li>
-							<li><a href="#"><i class="fa fa-share-alt"></i> Share Files</a></li>
+							<li><a href="http://192.168.2.253:9091/transmission/web/"><i class="fa fa-download"></i> Downloads</a></li>
+							<li><a href="public.html"><i class="fa fa-users"></i> Public</a></li>
 							<li><a href="#"><i class="fa fa-credit-card"></i> Print a Wifi Card</a></li>
-							<li><a href="#" class="md-trigger" data-modal="modal-1"><i class="fa fa-power-off"></i> Power</a></li>
-							<li><a href="index.html" class="md-trigger" data-modal="modal-2"><i class="fa fa-phone"></i> Contact us</a></li>
+							<li><a href="#"><i class="fa fa-power-off"></i> Power</a></li>
+							<li><a href="#" class="md-trigger" data-modal="modal-2"><i class="fa fa-phone"></i> Contact us</a></li>
 						</ul>	
 					</div>
 				</nav><!-- /mp-menu -->
@@ -44,24 +45,40 @@
 				<div class="menu-wrap">
 					<nav class="menu">
 						<div class="icon-list">
-							<a href="#" id="close-button"><i class="fa"><img class="rightsidelogoinside" src="static/images/bloxlogowhite.png"></i></a>
-							<a href="#"><i class="fa fa-fw fa-user fa-2x"></i></a>
-							<a href="#"><i class="fa fa-fw fa-envelope-o fa-2x"></i></a>
-							<a href="#"><i class="fa fa-fw fa-comment-o fa-2x"></i></a>
-							<a href="#"><i class="fa fa-fw fa-bell-o fa-2x"></i></a>
-							<a href="#"><i class="fa fa-fw fa-signal fa-2x"></i></a>
+							<ul class="rightmenu">
+								<li><a href="#" id="close-button"><i class="fa fa-times fa-2x rightmenuclose"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-tumblr fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+								<hr>
+								<li><a href="#"><i class="fa fa-fw fa-cog fa-2x fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-fw fa-sign-out fa-2x fa-2x"></i></a></li>
+							</ul>
 						</div>
 					</nav>
 				</div><!-- /right-menu -->
 
-					<div class="scroller-inner blackbg">
+					<div class="scroller-inner midblackbg">
 
 						<!-- Top Navigation -->
 						<div class="codrops-top clearfix">
 							<div class="block block-40 clearfix">
 								<!-- Menu Trigger -->
-								<a href="index.html" class="rightbutton2"><i class="fa fa-tachometer fa-3x"></i></a><!-- //Menu Trigger -->
-								<a href="#" id="open-button" class="menu-button"><img class="rightsidelogo" id="fadeinoutinstant" src="static/images/bloxlogowhite.png"></a>
+								<a href="#" id="trigger" class="menu-trigger"></a><!-- //Menu Trigger -->
+								<a href="#" id="open-button" class="menu-button">
+									<span class="tooltip tooltip-effect-1">
+										<span class="tooltip-item">
+											<i class="fa fa-ellipsis-v"></i>
+										</span>	
+										<span class="tooltip-content2 clearfix">
+											<span class="tooltip-text2">Quick Menu
+											</span>
+										</span>
+									</span></a>
 							</div>
 						</div>
 

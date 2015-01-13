@@ -4,73 +4,203 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Blox Browser Control</title>
+		<title>Blox Browser Control - Support</title>
 		<meta name="author" content="chino padua">
-				<!-- Favicon--> 
+		<!-- Favicon--> 
 		<link rel="shortcut icon" href="static/images/favicon5.png">
 		<!-- Base--> 
 		<link rel="stylesheet" href="static/css/chino.css"> 
-		
 		<link rel="stylesheet" type="text/css" href="static/css/component.css" />
+		<link rel="stylesheet" type="text/css" href="static/css/tooltip-classic.css" />
 		<script src="static/js/modernizr.custom.js"></script>
+
 		<!-- Icons--> 
     	<link rel="stylesheet" type="text/css" href="static/font-awesome-4.2.0/css/font-awesome.min.css">
     	<link rel="stylesheet" type="text/css" href="static/font-awesome-4.2.0/css/font-awesome-animation.min.css">
-    	<!-- Contact us--> 
-    	<link rel="stylesheet" type="text/css" href="static/css/cs-forms.css" />
-		<script src="static/js/modernizr.custom2.js"></script>
+
 	</head>
 	<body>
-		<div class="contactcontainer">
+		<div class="container">
+			<!-- Push Wrapper -->
+			<div class="mp-pusher" id="mp-pusher">
 
-			<div class="fs-form-wrap" id="fs-form-wrap">
-				<div class="fs-title">
-					<h1>Customer Support</h1>
-				</div>
-				<form id="myform" class="fs-form fs-form-full" autocomplete="off">
-					<ol class="fs-fields">
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q1">What's your name?</label>
-							<input class="fs-anim-lower" id="q1" name="q1" type="text" placeholder="Chino Padua" required/>
-						</li>
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q2" data-info="We won't send you spam, we promise...">What's your email address?</label>
-							<input class="fs-anim-lower" id="q2" name="q2" type="email" placeholder="awesome@me.yes" required/>
-						</li>
-						
-						<li>
-							<label class="fs-field-label fs-anim-upper" for="q4" data-info="Just wanna say hi?">What your concern </label>
-							<textarea class="fs-anim-lower" id="q4" name="q4" placeholder="What was it?"></textarea>
-						</li>
-					</ol><!-- /fs-fields -->
-					<button class="fs-submit" type="submit">Send answers</button>
-				</form><!-- /fs-form -->
-			</div><!-- /fs-form-wrap -->
+				<nav id="mp-menu" class="mp-menu">
+					<div class="mp-level">
+						<h2 class="fa fa-tachometer"><img src="static/images/blox_logo.png" class="navbar-brand-logo page-scroll marginleft50"></h2>
+						<ul>
+							<li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
+							<li><a href="http://192.168.2.253:32400/web/index.html"><i class="fa fa-video-camera"></i> Video</a></li>
+							<li><a href="http://192.168.2.253:4040/"><i class="fa fa-music"></i> Music</a></li>
+							<li><a href="picture.html"><i class="fa fa-picture-o"></i> Picture</a></li>
+							<li><a href="http://192.168.2.253:9091/transmission/web/"><i class="fa fa-download"></i> Downloads</a></li>
+							<li><a href="public.html"><i class="fa fa-users"></i> Public</a></li>
+							<li><a href="#"><i class="fa fa-credit-card"></i> Print a Wifi Card</a></li>
+							<li><a href="#" class="md-trigger" data-modal="modal-1"><i class="fa fa-power-off"></i> Power</a></li>
+							<li><a href="#" class="md-trigger" data-modal="modal-2"><i class="fa fa-phone"></i> Contact us</a></li>
+						</ul>	
+					</div>
+				</nav><!-- /mp-menu -->
 
-			<a href="index.html" class="backtohome"><i class="fa fa-angle-left fa-2x"></i></a>
+				<!-- right-menu -->
+				<div class="menu-wrap">
+					<nav class="menu">
+						<div class="icon-list">
+							<ul class="rightmenu">
+								<li><a href="#" id="close-button"><i class="fa fa-times fa-2x rightmenuclose"></i></a></li>
+								<li><a href="#"><i class="fa fa-facebook fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-instagram fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-google-plus-square fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-linkedin fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-twitter fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-tumblr fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-pinterest fa-2x"></i></a></li>
+								<hr>
+								<li><a href="#"><i class="fa fa-fw fa-cog fa-2x fa-2x"></i></a></li>
+								<li><a href="#"><i class="fa fa-fw fa-sign-out fa-2x fa-2x"></i></a></li>
+							</ul>
+						</div>
+					</nav>
+				</div><!-- /right-menu -->
+
+				<div class="scroller greenbg"><!-- this is for emulating position fixed of the nav -->
+					<div class="scroller-inner">
+
+						<!-- Top Navigation -->
+						<div class="codrops-top clearfix">
+							<div class="block block-40 clearfix">
+								<!-- Menu Trigger -->
+								<a href="#" id="trigger" class="menu-trigger"></a><!-- //Menu Trigger -->
+								<a href="#" id="open-button" class="menu-button">
+									<span class="tooltip tooltip-effect-1">
+										<span class="tooltip-item">
+											<i class="fa fa-ellipsis-v"></i>
+										</span>	
+										<span class="tooltip-content2 clearfix">
+											<span class="tooltip-text2">Quick Menu
+											</span>
+										</span>
+									</span></a>
+							</div>
+						</div>
+
+						<header class="chino-header margintop60">
+							<h1>Customer Support</h1>
+						</header><!-- //Title -->
+
+
+						<div class="content clearfix">
+						<!-- Content Body HERE -->
+
+							<div class="main">
+								<form class="cbp-mc-form">
+									<div class="cbp-mc-column">
+										<label for="first_name">Name</label>
+					  					<input type="text" id="first_name" name="name" placeholder="Chino Padua" required>
+					  					<label for="email">Email Address</label>
+					  					<input type="email" id="email" name="email" placeholder="myemail@awesome.com"required>
+					  				</div>
+					  		
+					  				<div class="cbp-mc-column">
+					  					<label>Category</label>
+					  					<select id="talent" name="talent"required>
+					  						<option>Choose</option>
+					  						<option>Ninja silence</option>
+					  						<option>Sumo power</option>
+					  						<option>Samurai precision</option>
+					  					</select>
+					  					
+					  					<label for="comments">Whats your concern?</label>
+					  					<textarea id="message" name="message" placeholder="Message"required></textarea>	
+					  				</div>
+					  				<div class="cbp-mc-submit-wrap"><input class="cbp-mc-submit" type="submit" value="Send your data" /></div>
+								</form>
+							</div>
+						</div>
+						<!--Footer-->
+						<div class="footer centerdiv">
+							<a href="bloxentertainment.com">blox entertainment 2015</a>
+						</div>
+					</div><!-- /scroller-inner -->
+				</div><!-- /scroller -->
+			</div><!-- /pusher -->
 		</div><!-- /container -->
+
+		<!-- Power -->
+		<div class="md-modal md-effect-15" id="modal-1">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Were sorry but we need a Password</h3>
+					<form action="power.html">
+						<input class="margintop10" type="password" pattern="blox" defaultvalue placeholder="blox" required>
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Ok</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Power -->
+		<!-- Contact us -->
+		<div class="md-modal md-effect-15" id="modal-2">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Contact us</h3>
+					<div class="centerdiv marginbottom20">
+						<a href="https://www.facebook.com/bloxph" target="_blank"><i class="fa fa-facebook-square fa-3x marginlr10"></i></a>
+						<a href="https://www.twitter.com/bloxph" target="_blank"><i class="fa fa-twitter-square fa-3x marginlr10"></i></a>
+						<a href="http://instagram.com/bloxph/" target="_blank"><i class="fa fa-instagram fa-3x marginlr10"></i></a>
+					</div>
+					<div class="centerdiv">
+						<a href="www.bloxentertainment.com">www.bloxentertainment.com</a>
+					</div>	
+					<div class="centerdiv">
+						<a href="support.html" class="inline"><button class="okbutton" type="submit" value="go to power">Customer Support</button></a>
+						<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///Contact us -->
+
+		<!-- Delete -->
+		<div class="md-modal md-effect-1" id="modal-3">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Are you sure you wanna <span class="tooltip tooltip-effect-1">
+						<strong><span class="tooltip-item">Delete</span></strong>
+						<span class="tooltip-content clearfix">
+							<span class="tooltip-text">If you delete it there is no way you can retrieve it.
+								<a href="#">Learn More</a>
+							</span>
+						</span>
+					</span> this file?</h3>
+					<div class="centerdiv">
+						<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Yes</button></a>
+						<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+					</div>
+				</div>
+			</div>
+		</div><!-- ///Delete -->
+		<div class="md-overlay"></div><!-- the overlay element -->
+
+		<!-- JS Base -->
+		<script src="static/js/modalEffects.js"></script>
+		<script src="static/js/jquery-min.js"></script>
 		<script src="static/js/classie.js"></script>
-		<script src="static/js/selectFx.js"></script>
-		<script src="static/js/fullscreenForm.js"></script>
+		<script src="static/js/mlpushmenu.js"></script>
 		<script>
-			(function() {
-				var formWrap = document.getElementById( 'fs-form-wrap' );
-
-				[].slice.call( document.querySelectorAll( 'select.cs-select' ) ).forEach( function(el) {	
-					new SelectFx( el, {
-						stickyPlaceholder: false,
-						onChange: function(val){
-							document.querySelector('span.cs-placeholder').style.backgroundColor = val;
-						}
-					});
-				} );
-
-				new FForm( formWrap, {
-					onReview : function() {
-						classie.add( document.body, 'overview' ); // for demo purposes only
-					}
-				} );
-			})();
+			new mlPushMenu( document.getElementById( 'mp-menu' ), document.getElementById( 'trigger' ) );
+		</script>
+		<script src="static/js/rightmenu.js"></script>
+		<script>
+		$(document).ready(function(){
+		  $("img").click(function(){
+		    $("#fadeinoutinstant").fadeToggle();
+		  });
+		});
 		</script>
 	</body>
 </html>
+
+
+
+						

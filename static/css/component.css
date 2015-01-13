@@ -20,7 +20,7 @@ html, body, .container, .scroller {
     text-align: center;
     color: #fff;
     background: url('../bg/2.jpg') no-repeat bottom center scroll;
-    background-color: #fff;
+    background-color: #1d1d1d;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
@@ -34,6 +34,24 @@ html, body, .container, .scroller {
     text-align: center;
     color: #fff;
     background-color: #000;
+}
+
+.midblackbg {
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #1D1D1D;
+}
+
+.greenbg {
+    width: 100%;
+    height: 100%;
+    padding: 100px 0;
+    text-align: center;
+    color: #fff;
+    background-color: #27ae60;
 }
 
 .maindiv {
@@ -58,6 +76,9 @@ html, body, .container, .scroller {
 	min-width: 320px;
 }
 
+hr { display: block; height: 1px;
+    border: 0; border-top: 1px solid #1d1d1d;
+    margin: 1em 0; padding: 0; }
 
 .scroller {
 	overflow-y: scroll;
@@ -396,6 +417,19 @@ html, body, .container, .scroller {
 
 
 /* Rightside menu */
+.rightmenu {
+	margin-left: -44px;
+}
+
+.rightmenuclose {
+	color: rgb(153, 63, 63);
+}
+
+.rightmenuclose:hover,
+.rightmenuclose:hover {
+	color: #fff;
+}
+
 
 .menu-wrap a {
 	color: #b8b7ad;
@@ -412,28 +446,16 @@ html, body, .container, .scroller {
 .menu-button {
 	position: fixed;
 	z-index: 3000;
-	padding-top: .2em;
-	padding-right: .9em;
+	padding-top: .4em;
+	padding-right: 1em;
 	border: none;
-	text-indent: 2.5em;
-	font-size: 1.5em;
+	text-indent: 1em;
+	font-size: 1.8em;
 	color: transparent;
 	background: transparent;
 	right: 0;
 	top: 0;
-}
-
-.rightsidelogo {
-	width: 46px;
-}
-
-.rightsidelogo::after {
-	opacity: 0;
-	z-index: -1;   
-}
-
-.rightsidelogoinside {
-	width: 46px;
+	color: #fff;
 }
 
 /* Menu */
@@ -442,8 +464,8 @@ html, body, .container, .scroller {
 	z-index: 3001;
 	width: 90px;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.7);
-	font-size: 1.15em;
+	background: #000;
+	font-size: .9em;
 	-webkit-transform: translate3d(90px,0,0);
 	transform: translate3d(90px,0,0);
 	-webkit-transition: -webkit-transform 0.4s;
@@ -1113,3 +1135,207 @@ html, body, .container, .scroller {
 	background: #3b3f45;
 	color: #fff;
 }
+
+
+
+/*//FOOTER*/
+.footer {
+	margin-top: 50px;
+	background-color: #000;
+	height: 50px;
+	width: 100%;
+}
+
+.footer a {
+	color:#545454;
+	vertical-align: -18px;
+}
+
+/*//Button*/
+	.buttonmain {
+	border: 2px solid #D3D3D3;
+	background-color: transparent;
+	border-color: #2B4245;
+	max-width: 250px;
+	min-width: 100px;
+	color: #f9f6e5;
+	font-weight: 300;
+	font-size: 1em;
+	-webkit-appearance: button;
+	cursor: pointer;
+	display: block;
+	margin-top: 1em;
+	padding: .9em;
+	width: 100%;
+	}
+
+	.buttonmain:focus,
+	.buttonmain:hover {
+		background: #2B4245;
+	}
+	/*//Button*/
+
+
+/*Delete Modal*/
+
+.morph-clone strong {
+	color:#CA1111;
+}
+
+/*///Delete Modal*/
+
+
+
+
+
+/*Customer Support*/
+.cbp-mc-form {
+	position: relative;
+}
+
+/* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
+.cbp-mc-form:before, 
+.cbp-mc-form:after { 
+	content: " "; display: table; 
+}
+
+.cbp-mc-form:after { 
+	clear: both; 
+}
+
+.cbp-mc-column {
+	width: 100%;
+	padding: 10px 30px;
+	float: left;
+}
+
+.cbp-mc-form label {
+	display: block;
+	padding: 40px 5px 5px 2px;
+	font-size: 1.1em;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	cursor: pointer;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea,
+.cbp-mc-form select {
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	line-height: 1.5;
+	font-size: 1.4em;
+	padding: 5px 10px;
+	color: #1A7E44;
+	display: block;
+	width: 100%;
+	background: transparent;
+	border: 3px solid #fff;
+}
+
+.cbp-mc-form input,
+.cbp-mc-form textarea {
+	border: 3px solid #fff;
+}
+
+.cbp-mc-form textarea {
+	min-height: 200px;
+}
+
+.cbp-mc-form input:focus,
+.cbp-mc-form textarea:focus,
+.cbp-mc-form label:active + input,
+.cbp-mc-form label:active + textarea {
+	outline: none;
+	border: 3px solid #0e7138;
+}
+
+.cbp-mc-form select:focus {
+	outline: none;
+}
+
+::-webkit-input-placeholder { /* WebKit browsers */
+    color: #1A7E44;
+}
+
+:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color: #1A7E44;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color: #1A7E44;
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color: #1A7E44;
+}
+
+.cbp-mc-submit-wrap {
+	text-align: center;
+	padding-top: 40px;
+	clear: both;
+}
+
+.cbp-mc-form input.cbp-mc-submit {
+	background: #1d9650;
+	border: none;
+	color: #fff;
+	width: auto;
+	cursor: pointer;
+	text-transform: uppercase;
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 1.1em;
+	border-radius: 2px;
+	letter-spacing: 1px;
+}
+
+.cbp-mc-form input.cbp-mc-submit:hover {
+	background: #0e7138;
+}
+
+.main {
+width: 100%;
+padding: 0 2em 3em;
+}
+
+
+/*///////Customer Support*/
+
+
+/*Public Downloads*/
+.list {
+	margin: 0 auto;
+	max-width: 50em;
+	padding: 0 1em;
+}
+
+.listitem {
+	position: relative;
+	margin: 0.25em;
+	height: 1.75em;
+	border-radius: 5px;
+	background: #412b45;
+	list-style-type: none;
+	text-align: left;
+	font-size: 1.8em;
+}
+
+.publicitem {
+	vertical-align: -8px;
+	margin-left: 20px;
+}
+
+.publicicon {
+	position: absolute;
+	display: inline-block;
+	top: 19px;
+	right: 30px;
+	font-size: 0.5em;
+}
+
+.publicicon:hover {
+	top: 12px;
+	font-size: 0.8em;
+	right: 28px;
+}
+/*//////Public Downloads*/
