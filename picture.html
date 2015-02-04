@@ -15,29 +15,32 @@
 		<script src="static/js/modernizr.custom.js"></script>
 		<!-- Icons--> 
     	<link rel="stylesheet" type="text/css" href="static/font-awesome-4.2.0/css/font-awesome.min.css">
-    	<link rel="stylesheet" type="text/css" href="static/font-awesome-4.2.0/css/font-awesome-animation.min.css">
     	<!-- Exclusive for Pictures -->
     	<link rel="stylesheet" href="imagegallery.css"><!-- Bugged -->
 
-	</head>
+		</head>
 	<body>
 		<div class="container">
 			<!-- Push Wrapper -->
 			<div class="mp-pusher" id="mp-pusher">
-
+				<!-- mp-menu -->
 				<nav id="mp-menu" class="mp-menu">
 					<div class="mp-level">
 						<h2 class="fa fa-tachometer"><img src="static/images/blox_logo.png" class="navbar-brand-logo page-scroll marginleft50"></h2>
 						<ul>
-							<li><a href="index.html"><i class="fa fa-tachometer"></i> Dashboard</a></li>
-							<li><a href="http://192.168.2.253:32400/web/index.html"><i class="fa fa-video-camera"></i> Video</a></li>
-							<li><a href="http://192.168.2.253:4040/"><i class="fa fa-music"></i> Music</a></li>
-							<li><a href="picture.html"><i class="fa fa-picture-o"></i> Picture</a></li>
-							<li><a href="http://192.168.2.253:9091/transmission/web/"><i class="fa fa-download"></i> Downloads</a></li>
-							<li><a href="public.html"><i class="fa fa-users"></i> Public</a></li>
-							<li><a href="#"><i class="fa fa-credit-card"></i> Print a Wifi Card</a></li>
-							<li><a href="#" class="md-trigger" data-modal="modal-1"><i class="fa fa-power-off"></i> Power</a></li>
-							<li><a href="#" class="md-trigger" data-modal="modal-2"><i class="fa fa-phone"></i> Contact us</a></li>
+							<div class="list-group">
+								<li><a class="list-group-item" href="index.html"><i class="fa fa-tachometer fa-fw"></i>&nbsp; Dashboard</a></li>
+								<li><a class="list-group-item" href="http://192.168.2.253:32400/web/index.html"><i class="fa fa-video-camera fa-fw"></i>&nbsp; Video</a></li>
+								<li><a class="list-group-item" href="http://192.168.2.253:4040/"><i class="fa fa-music fa-fw"></i>&nbsp; Music</a></li>
+								<li><a class="list-group-item" href="picture.html"><i class="fa fa-picture-o fa-fw"></i>&nbsp; Picture</a></li>
+								<li><a class="list-group-item" href="downloads.html"><i class="fa fa-download fa-fw"></i>&nbsp; Downloads</a></li>
+								<li><a class="list-group-item" href="public.html"><i class="fa fa-users fa-fw"></i>&nbsp; Public</a></li>
+								<li><a class="list-group-item" href="#"><i class="fa fa-credit-card fa-fw"></i>&nbsp; Print a Wifi Card</a></li>
+								<li><a class="list-group-item md-trigger" href="#" data-modal="modal-1"><i class="fa fa-power-off fa-fw"></i>&nbsp; Power</a></li>
+								<li><a class="list-group-item" href="contact.html"><i class="fa fa-phone fa-fw"></i>&nbsp; Contact us</a></li>
+								<li><a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a></li>
+								<li><a class="list-group-item md-trigger" href="#" data-modal="modal-4"><i class="fa fa-unlock fa-fw"></i>&nbsp; Login</a></li>
+							</div>
 						</ul>	
 					</div>
 				</nav><!-- /mp-menu -->
@@ -63,40 +66,39 @@
 					</nav>
 				</div><!-- /right-menu -->
 
-				<div class="scroller midblackbg"><!-- this is for emulating position fixed of the nav -->
+				<div class="scroller whitebg"><!-- this is for emulating position fixed of the nav -->
 					<div class="scroller-inner">
 
 						<!-- Top Navigation -->
 						<div class="codrops-top clearfix">
 							<div class="block block-40 clearfix">
 								<!-- Menu Trigger -->
-								<a href="#" id="trigger" class="menu-trigger"></a><!-- //Menu Trigger -->
-								<a href="#" id="open-button" class="menu-button">
+								<a href="#" id="trigger" class="menu-triggeronwhite"></a><!-- //Menu Trigger -->
+								<a href="#" id="open-button" class="menu-buttononwhite">
 									<span class="tooltip tooltip-effect-1">
 										<span class="tooltip-item">
 											<i class="fa fa-ellipsis-v"></i>
 										</span>	
 										<span class="tooltip-content2 clearfix">
-											<span class="tooltip-text2">Quick Menu
+											<span class="tooltip-text2onwhite">Quick Menu
 											</span>
 										</span>
 									</span></a>
 							</div>
 						</div>
-
-						<header class="chino-header margintop60">
-							<h1>Your Pictures</h1>
-						</header><!-- //Title -->
-
-
+						
 						<div class="content clearfix">
 						<!-- Content Body HERE -->
-
-							<div class="centerdiv">
-								<a href="#" class="inline marginbottom20"><button class="buttonmain" type="submit">Back</button></a>
-								<a href="#" class="inline marginbottom20"><button class="buttonmain" type="submit">Upload</button></a>
-								<a href="#" class="inline marginbottom20"><button class="buttonmain" type="submit">Edit</button></a>
+						<div class="inner-header">
+							<div class="inner-inner">
+								<h1>Pictures</h1>
+								<nav>
+									<a href="#"><i class="fa fa-caret-left"></i> Back</a>
+									<a href="#" class="md-trigger" data-modal="modal-2"><i class="fa fa-upload"></i> Upload</a>
+									<a href="#"><i class="fa fa-pencil"></i> Edit</a>
+								</nav>
 							</div>
+						</div>
 
 							<div id="gallery">
 								<ul class="grid effect-2" id="grid">
@@ -137,20 +139,23 @@
 									<li><a href="static/images/20.jpg" rel="external"><img src="static/images/20.jpg" alt="Marcos Hiway"></a></li>
 									<li><a href="static/images/21.jpg" rel="external"><img src="static/images/21.jpg" alt="Marcos Hiway"></a></li>
 								</ul>
-							</div>
-						</div>
+							</div><!-- /gallery -->
+						</div><!-- /content -->
 					</div><!-- /scroller-inner -->
 				</div><!-- /scroller -->
 			</div><!-- /pusher -->
 		</div><!-- /container -->
 
+
+<!--MODALS-->
 		<!-- Power -->
 		<div class="md-modal md-effect-15" id="modal-1">
 			<div class="md-content">
 				<div class="content-style-form content-style-form-4">
-					<h3 class="morph-clone">Were sorry but we need a Password</h3>
+					<h3>Login</h3>
 					<form action="power.html">
-						<input class="margintop10" type="password" pattern="blox" defaultvalue placeholder="blox" required>
+						<input class="margintop10" type="text" pattern="blox" defaultvalue placeholder="Username" required>
+						<input class="margintop10" type="password" pattern="blox" defaultvalue placeholder="Password" required>
 						<div class="centerdiv">
 							<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Ok</button></a>
 							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
@@ -159,26 +164,134 @@
 				</div>
 			</div>
 		</div><!-- ///Power -->
-		<!-- Contact us -->
-		<div class="md-modal md-effect-15" id="modal-2">
+
+		<!-- Upload Pictures -->
+		<div class="md-modal md-effect-1" id="modal-2">
 			<div class="md-content">
 				<div class="content-style-form content-style-form-4">
-					<h3 class="morph-clone">Contact us</h3>
-					<div class="centerdiv marginbottom20">
-						<a href="https://www.facebook.com/bloxph" target="_blank"><i class="fa fa-facebook-square fa-3x marginlr10"></i></a>
-						<a href="https://www.twitter.com/bloxph" target="_blank"><i class="fa fa-twitter-square fa-3x marginlr10"></i></a>
-						<a href="http://instagram.com/bloxph/" target="_blank"><i class="fa fa-instagram fa-3x marginlr10"></i></a>
-					</div>
+					<h3>Upload your images</h3>
+					
+					<form action="" method="post" enctype="multipart/form-data" role="form">
+
+				        <input class"uploadfiles" type="file" name="file[]" multiple="" id="fileupload">
+
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit" value="upload">Upload</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Upload Pictures -->
+
+		<!-- Delete -->
+		<div class="md-modal md-effect-1" id="modal-3">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Are you sure you wanna <span class="tooltip tooltip-effect-1">
+						<strong><span class="tooltip-item">Delete</span></strong>
+						<span class="tooltip-content clearfix">
+							<span class="tooltip-text">If you delete it there is no way you can retrieve it.
+								<a href="#">Learn More</a>
+							</span>
+						</span>
+					</span>this file?</h3>
 					<div class="centerdiv">
-						<a href="www.bloxentertainment.com">www.bloxentertainment.com</a>
-					</div>	
-					<div class="centerdiv">
-						<a href="support.html" class="inline"><button class="okbutton" type="submit" value="go to power">Customer Support</button></a>
+						<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Yes</button></a>
 						<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
 					</div>
 				</div>
 			</div>
-		</div><!-- ///Contact us -->
+		</div><!-- ///Delete -->
+
+
+		<!-- Login -->
+		<div class="md-modal md-effect-15" id="modal-4">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3>Login</h3>
+					<form action="index.html">
+						<input class="margintop10" type="text" pattern="blox" defaultvalue placeholder="Username" required>
+						<input class="margintop10" type="password" pattern="blox" defaultvalue placeholder="Password" required>
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Ok</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Login -->
+
+		<!-- Delete Confirmation -->
+		<div class="md-modal md-effect-1" id="modal-6">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Were sorry but we need your</h3>
+					<form action="#">
+						<input class="margintop10" type="text" defaultvalue placeholder="Username">
+						<input class="margintop10" type="password" pattern="blox" defaultvalue placeholder="Password" required>
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit" value="go to power">Ok</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Delete Confirmation -->
+
+		<!-- Edit User -->
+		<div class="md-modal md-effect-1" id="modal-7">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Change Password</h3>
+					<form action="#">
+						<div class="diffform">
+							<label>New Password</label>
+							<input class="margintop10" type="password" required>
+						</div>
+						<div class="diffform">
+							<label>Repeat Password</label>
+							<input class="margintop10" type="password" required>
+						</div>
+						
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit">Ok</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Edit User -->
+
+		<!-- Add User -->
+		<div class="md-modal md-effect-1" id="modal-8">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3 class="morph-clone">Add User</h3>
+					<form action="#">
+						<div class="diffform">
+							<label>Username</label>
+							<input class="margintop10" type="text" required>
+						</div>
+						<div class="diffform">
+							<label>Password</label>
+							<input class="margintop10" type="password" required>
+						</div>
+
+						<div class="diffform">
+							<label>Repeat Password</label>
+							<input class="margintop10" type="password" required>
+						</div>
+						
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit">Ok</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Add User -->
+
 		<div class="md-overlay"></div><!-- the overlay element -->
 
 		<script src="static/js/masonry.pkgd.min.js"></script>

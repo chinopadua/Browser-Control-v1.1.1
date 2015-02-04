@@ -13,6 +13,12 @@
 	padding: 0 10px;
 }
 
+.tooltip-item2 {
+	cursor: pointer;
+	display: inline-block;
+	font-weight: 700;
+}
+
 /* Gap filler */
 
 .tooltip-item::after {
@@ -66,14 +72,28 @@
 	pointer-events: none;
 }
 
+.tooltip-content3 {
+	position: absolute;
+	z-index: 9999;
+	width: 172px;
+	left: 50%;
+	margin: 0 0 10px -87px;
+	bottom: 100%;
+	text-align: left;
+	line-height: 1.4;
+	box-shadow: -5px -5px 15px rgba(48,54,61,0.2);
+	background: #2a3035;
+	opacity: 0;
+	cursor: default;
+	pointer-events: none;
+}
+
 .tooltip-effect-1 .tooltip-content {
 	-webkit-transform: translate3d(0,-10px,0);
 	transform: translate3d(0,-10px,0);
 	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
 	transition: opacity 0.3s, transform 0.3s;
 }
-
-
 
 .tooltip:hover .tooltip-content {
 	pointer-events: auto;
@@ -95,7 +115,6 @@
 }
 
 
-
 .tooltip:hover .tooltip-content2 {
 	pointer-events: auto;
 	opacity: 1;
@@ -106,6 +125,20 @@
 .tooltip.tooltip-effect-2:hover .tooltip-content2 {
 	-webkit-transform: perspective(1000px) rotate3d(1,0,0,0deg);
 	transform: perspective(1000px) rotate3d(1,0,0,0deg);
+}
+
+.tooltip-effect-1 .tooltip-content3 {
+	-webkit-transform: translate3d(0,-10px,0);
+	transform: translate3d(0,-10px,0);
+	-webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+	transition: opacity 0.3s, transform 0.3s;
+}
+
+.tooltip:hover .tooltip-content3 {
+	pointer-events: auto;
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0) rotate3d(0,0,0,0);
+	transform: translate3d(0,0,0) rotate3d(0,0,0,0);
 }
 
 /* Arrow */
@@ -139,6 +172,21 @@
 	margin-left: -10px;
 }
 
+.tooltip-content3::after {
+	content: '';
+	top: 100%;
+	left: 50%;
+	border: solid transparent;
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: transparent;
+	border-top-color: #2a3035;
+	border-width: 10px;
+	margin-left: -10px;
+}
+
 /* Tooltip content*/
 
 .tooltip-content img {
@@ -163,6 +211,23 @@
 	display: block;
 	position: fixed;
 	color: #fff;
+}
+
+.tooltip-text2onwhite {
+	font-size: 0.68em;
+	line-height: 1.35;
+	display: block;
+	position: fixed;
+	color: #aaa;
+}
+
+.tooltip-text2onwhite2 {
+	font-size: 1em;
+	line-height: 1.35;
+	display: block;
+	padding: 1.31em 1.21em 1.21em 1.21em;
+	color: #fff;
+	text-align: center;
 }
 
 .tooltip-effect-5 .tooltip-text {

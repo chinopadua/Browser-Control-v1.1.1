@@ -4,7 +4,7 @@
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-		<title>Public Files</title>
+		<title>Network - Wi-Fi</title>
 		<meta name="author" content="chino padua">
 		<!-- Favicon--> 
 		<link rel="shortcut icon" href="static/images/favicon5.png">
@@ -17,7 +17,7 @@
 		<!-- Icons--> 
 		 <link rel="stylesheet" type="text/css" href="static/font-awesome-4.2.0/css/font-awesome.min.css">
 		 <!-- Exclusive for this page--> 
-		 <link rel="stylesheet" type="text/css" href="static/css/tables.css" />
+		 <link rel="stylesheet" type="text/css" href="static/css/network.css" />
 		<!--[if IE]>
   		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
@@ -94,36 +94,37 @@
 						<!-- Content Body HERE -->
 						<div class="inner-header">
 							<div class="inner-inner">
-								<h1>Public Files</h1>
+								<h1>Wi-Fi</h1>
 								<nav>
-									<a href="#"><i class="fa fa-upload"></i> Upload</a>
+									<a href="network.html"><i class="fa fa-plug"></i> LAN</a>
 								</nav>
 							</div>
 						</div>
 
 							<div class="container">
+									<h3>Currently connected to: </h3><h2 class="value">PLDTMyDSLblox</h2>
 								<div class="component">
-									<table>
-										<thead>
-											<tr>
-												<th>Files</th>
-												<th>Options</th>
-											</tr>
-										</thead>
-										<tbody>
-											<tr><td class="files"><a href="#">Public Videos</a></td><td class="options"><a href="#" class="md-trigger" data-modal="modal-3"><i class="fa fa-trash-o marginleft20"></i></a></td></tr>
-											<tr><td class="files"><a href="#">Public Music</td><td class="options"><a href="#" class="md-trigger" data-modal="modal-3"><i class="fa fa-trash-o marginleft20"></i></a></td></tr>
-											<tr><td class="files"><a href="#">Public Pictures</a></td><td class="options"><a href="#" class="md-trigger" data-modal="modal-3"><i class="fa fa-trash-o marginleft20"></i></a></td></tr>
-											<tr><td class="files"><a href="#">Public Documents</td><td class="options"><a href="#" class="md-trigger" data-modal="modal-3"><i class="fa fa-trash-o marginleft20"></i></a></td></tr>
-											<tr><td class="files"><a href="#">for_print.docx</a></td><td class="options"><a href="#" class="md-trigger" data-modal="modal-3"><i class="fa fa-trash-o marginleft20"></i></a></td></tr>
-											<tr><td class="files"><a href="#">ES File Explorer_3.2.1.apk</td><td class="options"><a href="#" class="md-trigger" data-modal="modal-3"><i class="fa fa-trash-o marginleft20"></i></a></td></tr>
-										</tbody>
-									</table>
-								</div><!-- /component -->
+									<h2>List of SSID</h2>
+
+										<form class="form">
+											<input type="radio" label="PLDTMyDSLblox" required>
+											<label>PLDTMyDSLblox</label>
+
+											<div class="password">
+												<label>Password</label>
+												<input type="password" pattern="blox" defaultvalue required>
+											</div>
+											
+											<a href="#" class="formbutton"><button class="okbutton" type="submit" value="submit">Ok</button></a>
+											<a href="#" class="formbutton"><button class="cancelbutton" type="reset" value="Reset">Cancel</button></a>
+										</form>
+
 							</div><!-- /container -->
 						</div><!-- /content -->
+
 					</div><!-- /scroller-inner -->
 				</div><!-- /scroller -->
+
 			</div><!-- /pusher -->
 		</div><!-- /container -->
 
