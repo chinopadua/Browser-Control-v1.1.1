@@ -35,7 +35,7 @@
 								<li><a class="list-group-item" href="picture.html"><i class="fa fa-picture-o fa-fw"></i>&nbsp; Picture</a></li>
 								<li><a class="list-group-item" href="downloads.html"><i class="fa fa-download fa-fw"></i>&nbsp; Downloads</a></li>
 								<li><a class="list-group-item" href="public.html"><i class="fa fa-users fa-fw"></i>&nbsp; Public</a></li>
-								<li><a class="list-group-item" href="#"><i class="fa fa-credit-card fa-fw"></i>&nbsp; Print a Wifi Card</a></li>
+								<li><a class="list-group-item" href="print.html"><i class="fa fa-credit-card fa-fw"></i>&nbsp; Print a Wifi Card</a></li>
 								<li><a class="list-group-item md-trigger" href="#" data-modal="modal-1"><i class="fa fa-power-off fa-fw"></i>&nbsp; Power</a></li>
 								<li><a class="list-group-item" href="contact.html"><i class="fa fa-phone fa-fw"></i>&nbsp; Contact us</a></li>
 								<li><a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a></li>
@@ -222,6 +222,25 @@
 			</div>
 		</div><!-- ///Login -->
 
+		<!-- Downloads Upload -->
+		<div class="md-modal md-effect-1" id="modal-5">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3>Upload a file</h3>
+					
+					<form action="" method="post" enctype="multipart/form-data" role="form">
+
+				        <input class"uploadfiles" type="file" name="file[]" multiple="" id="fileupload">
+
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit" value="upload">Upload</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Downloads Upload -->
+
 		<!-- Delete Confirmation -->
 		<div class="md-modal md-effect-1" id="modal-6">
 			<div class="md-content">
@@ -292,8 +311,29 @@
 			</div>
 		</div><!-- ///Add User -->
 
+		<!-- Public Upload -->
+		<div class="md-modal md-effect-1" id="modal-9">
+			<div class="md-content">
+				<div class="content-style-form content-style-form-4">
+					<h3>Upload a file</h3>
+					
+					<form action="" method="post" enctype="multipart/form-data" role="form">
+
+				        <input class"uploadfiles" type="file" name="file[]" multiple="" id="fileupload">
+
+						<div class="centerdiv">
+							<a href="#" class="inline"><button class="okbutton" type="submit" value="upload">Upload</button></a>
+							<a href="#" class="inline"><button class="md-close cancelbutton" type="reset" value="Reset">Cancel</button></a>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div><!-- ///Public Upload -->
+
+
 		<div class="md-overlay"></div><!-- the overlay element -->
 
+		<!-- Exclusive for Pictures -->
 		<script src="static/js/masonry.pkgd.min.js"></script>
 		<script src="static/js/imagesloaded.js"></script>
 		<script src="static/js/AnimOnScroll.js"></script>
