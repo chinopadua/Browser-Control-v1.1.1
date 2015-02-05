@@ -13,14 +13,10 @@
 		<link rel="stylesheet" type="text/css" href="static/css/component.css" />
 		<link rel="stylesheet" type="text/css" href="static/css/tooltip-classic.css" />
 		<script src="static/js/modernizr.custom.js"></script>
-
 		<!-- Icons--> 
 		 <link rel="stylesheet" type="text/css" href="static/font-awesome-4.2.0/css/font-awesome.min.css">
 		 <!-- Exclusive for this page--> 
 		 <link rel="stylesheet" type="text/css" href="static/css/network.css" />
-		<!--[if IE]>
-  		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-		<![endif]-->
 		</head>
 	<body>
 		<div class="container">
@@ -33,15 +29,16 @@
 						<ul>
 							<div class="list-group">
 								<li><a class="list-group-item" href="index.html"><i class="fa fa-tachometer fa-fw"></i>&nbsp; Dashboard</a></li>
-								<li><a class="list-group-item" href="http://192.168.2.253:32400/web/index.html"><i class="fa fa-video-camera fa-fw"></i>&nbsp; Video</a></li>
-								<li><a class="list-group-item" href="http://192.168.2.253:4040/"><i class="fa fa-music fa-fw"></i>&nbsp; Music</a></li>
+								<li><a class="list-group-item" href="http://blox.home:32400/web/index.html"><i class="fa fa-video-camera fa-fw"></i>&nbsp; Video</a></li>
+								<li><a class="list-group-item" href="http://blox.home:4040/"><i class="fa fa-music fa-fw"></i>&nbsp; Music</a></li>
 								<li><a class="list-group-item" href="picture.html"><i class="fa fa-picture-o fa-fw"></i>&nbsp; Picture</a></li>
-								<li><a class="list-group-item" href="downloads.html"><i class="fa fa-download fa-fw"></i>&nbsp; Downloads</a></li>
+								<li><a class="list-group-item" href="http://blox.home:9091/transmission/web/"><i class="fa fa-download fa-fw"></i>&nbsp; Downloads</a></li>
 								<li><a class="list-group-item" href="public.html"><i class="fa fa-users fa-fw"></i>&nbsp; Public</a></li>
+								<li><a class="list-group-item" href="installers.html"><i class="fa fa-external-link-square fa-fw"></i>&nbsp; Installers</a></li>
 								<li><a class="list-group-item" href="print.html"><i class="fa fa-credit-card fa-fw"></i>&nbsp; Print a Wifi Card</a></li>
-								<li><a class="list-group-item md-trigger" href="#" data-modal="modal-1"><i class="fa fa-power-off fa-fw"></i>&nbsp; Power</a></li>
 								<li><a class="list-group-item" href="contact.html"><i class="fa fa-phone fa-fw"></i>&nbsp; Contact us</a></li>
 								<li><a class="list-group-item" href="settings.html"><i class="fa fa-cog fa-fw"></i>&nbsp; Settings</a></li>
+								<li><a class="list-group-item md-trigger" href="#" data-modal="modal-1"><i class="fa fa-power-off fa-fw"></i>&nbsp; Power</a></li>
 								<li><a class="list-group-item md-trigger" href="#" data-modal="modal-4"><i class="fa fa-unlock fa-fw"></i>&nbsp; Login</a></li>
 							</div>
 						</ul>	
@@ -71,11 +68,9 @@
 
 				<div class="scroller whitebg"><!-- this is for emulating position fixed of the nav -->
 					<div class="scroller-inner">
-
 						<!-- Top Navigation -->
-						<div class="codrops-top clearfix">
-							<div class="block block-40 clearfix">
-								<!-- Menu Trigger -->
+							<div class="block block-40">
+							<!-- Menu Trigger -->
 								<a href="#" id="trigger" class="menu-triggeronwhite"></a><!-- //Menu Trigger -->
 								<a href="#" id="open-button" class="menu-buttononwhite">
 									<span class="tooltip tooltip-effect-1">
@@ -86,37 +81,39 @@
 											<span class="tooltip-text2onwhite">Quick Menu
 											</span>
 										</span>
-									</span></a>
+									</span>
+								</a>
 							</div>
-						</div>
-						
 						<div class="content clearfix">
-						<!-- Content Body HERE -->
-						<div class="inner-header">
-							<div class="inner-inner">
-								<h1 class="contacthead">Contact us</h1>
-								<nav>
-									<a href="support.html"><i class="fa fa-phone"></i> Support</a>
-									<a href="#"><i class="fa fa-question-circle"></i> FAQs</a>
-								</nav>
+							<!-- Content Body HERE -->
+							<div class="inner-header">
+								<div class="inner-inner">
+									<h1 class="contacthead">Contact us</h1>
+									<nav>
+										<a href="support.html"><i class="fa fa-phone"></i> Support</a>
+										<a href="#"><i class="fa fa-question-circle"></i> FAQs</a>
+									</nav>
+								</div>
+							</div>
+							<div class="containertop">
+								<div class="contact">
+									<h2 class="mediaaccounts">Social Media Accounts</h2>
+									<a href="https://www.facebook.com/bloxph" target="_blank"><i class="fa fa-facebook-square fa-3x marginlr10"></i></a>
+									<a href="https://www.twitter.com/bloxph" target="_blank"><i class="fa fa-twitter-square fa-3x marginlr10"></i></a>
+									<a href="http://instagram.com/bloxph/" target="_blank"><i class="fa fa-instagram fa-3x marginlr10"></i></a>
+									<div class=" margintop50">
+										<h2 class="mediaaccounts">Visit our site</h2>
+										<h2 class="mediaaccounts"><a href="http://www.bloxentertainment.com/">www.bloxentertainment.com</a></h2>
+									</div>
+								</div>
+							</div><!-- /containertop -->
+						</div><!-- /content -->
+						<div class="footer">
+							<div class="footerinside">
+								<img src="static/img/botlogo.png">
+								<p>© Blox Browser Control 2015 - v1.0</p>
 							</div>
 						</div>
-
-							<div class="container">
-									<div class="contact">
-										<h2 class="mediaaccounts">Social Media Accounts</h2>
-										<a href="https://www.facebook.com/bloxph" target="_blank"><i class="fa fa-facebook-square fa-3x marginlr10"></i></a>
-										<a href="https://www.twitter.com/bloxph" target="_blank"><i class="fa fa-twitter-square fa-3x marginlr10"></i></a>
-										<a href="http://instagram.com/bloxph/" target="_blank"><i class="fa fa-instagram fa-3x marginlr10"></i></a>
-										<div class=" margintop50">
-											<h2 class="mediaaccounts">Visit our site</h2>
-											<h2 class="mediaaccounts"><a href="http://www.bloxentertainment.com/">www.bloxentertainment.com</a></h2>
-										</div>
-									</div>
-										
-							
-						</div><!-- /content -->
-
 					</div><!-- /scroller-inner -->
 				</div><!-- /scroller -->
 

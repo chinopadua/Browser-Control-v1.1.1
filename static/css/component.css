@@ -12,6 +12,17 @@ html, body, .container, .scroller {
 	margin: 0;
 }
 
+.content {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+	margin: 0 auto;
+}
+
+.clearfix{
+margin-bottom: 100px;
+}
+
 /*Landing Page Picture */
 .custombg {
     width: 100%;
@@ -26,7 +37,6 @@ html, body, .container, .scroller {
     background-size: cover;
     -o-background-size: cover;
 }
-
 
 .blackbg {
     width: 100%;
@@ -85,9 +95,13 @@ html, body, .container, .scroller {
 	min-width: 320px;
 }
 
-hr { display: block; height: 1px;
-    border: 0; border-top: 1px solid #1d1d1d;
-    margin: 1em 0; padding: 0; }
+hr { 
+	display: block; height: 1px;
+    border: 0; 
+    border-top: 1px solid #222;
+    margin: 0 auto; padding: 0; 
+    max-width: 1000px;
+}
 
 .scroller {
 	overflow-y: scroll;
@@ -108,6 +122,13 @@ hr { display: block; height: 1px;
 .containeralbum {
 	position: relative;
 	background: transparent;
+}
+
+.containertop {
+	position: relative;
+	overflow: hidden;
+	background: transparent;
+	margin-top: 30px;
 }
 
 .menu-trigger {
@@ -1067,26 +1088,13 @@ hr { display: block; height: 1px;
 			transition: all 0.3s;
 		}
 
-		/*// Power Login Form*/
+		/*// Power page*/
 
 		.powerdiv {
-			position: fixed;
-			top: 50%;
-			left: 50%;
-			width: 100%;
-			height: auto;
-			z-index: 1003;
-			-webkit-transform: translateX(-50%) translateY(-50%);
-			-moz-transform: translateX(-50%) translateY(-50%);
-			-ms-transform: translateX(-50%) translateY(-50%);
-			transform: translateX(-50%) translateY(-50%);
+			margin-top: 40px;
 		}
 
 		.powercontent {
-			color: #fff;
-			background: transparent;
-			position: relative;
-			border-radius: 3px;
 			margin: 0 auto;
 			max-width: 630px;
 			min-width: 320px;
@@ -1187,18 +1195,42 @@ hr { display: block; height: 1px;
 }
 
 
-
 /*//FOOTER*/
+
 .footer {
-	margin-top: 50px;
-	background-color: #000;
-	height: 50px;
-	width: 100%;
+	clear: both;
+	background-color: #2d2d2d;
+	height: 90px;
+	width:100%;
+}
+
+.footerinside p{
+	color:#5F5F5F;
+	font-weight: 800;
+	font-size: 0.8em;
+}
+
+.footerinside img {
+	margin-top: 18px;
+	margin-bottom: -10px;
+}
+
+.footerleft {
+	bottom:0;
+}
+
+.footer li {
+float: left;
+margin-right: 15%;
+list-style: none;
+font-weight: 400;
 }
 
 .footer a {
 	color:#545454;
-	vertical-align: -18px;
+}
+.row {
+	width: 100%;
 }
 
 /*//Button*/
@@ -1573,6 +1605,10 @@ padding: 0 2em 3em;
 	line-height:1.6em;
 	}
 
+	.inner-header {
+		margin-bottom: 30px;
+	}
+
 }
 
 @media screen and (max-width: 450px) {
@@ -1604,7 +1640,13 @@ padding: 0 2em 3em;
 
 .value {
 	display: inline;
-	text-decoration: underline;
+}
+
+.value2 {
+	display: inline;
+	font-size: 1.1em;
+	color:#11CA66;
+
 }
 
 .mediaaccounts {
@@ -1650,3 +1692,33 @@ padding: 0 2em 3em;
 	color:#2d2d2d;
 }
 
+.beforebutton {
+	margin-top: -10px;
+}
+
+.side {
+	display: inline-block;
+	margin-top:24px;
+	color:#11CA66;
+}
+
+.side2 {
+	font-size: 1.1em;
+	font-weight: 800;
+}
+
+.connected {
+	line-height: 1.5em;
+	margin: 0 auto 1em;
+	width: 90%;
+	max-width: 900px;
+	overflow: hidden;
+	padding-bottom: 22px;
+	border: 2px solid #11CA66;
+	background-color: transparent;
+	border-radius: 1%;
+}
+
+.connected h3 {
+	color:#11CA66;
+}

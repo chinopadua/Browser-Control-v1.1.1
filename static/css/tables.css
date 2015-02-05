@@ -143,4 +143,13 @@ td.options a:hover {
 
 }
 
+@media screen and (max-width: 800px) {
+
+		.table {
+			margin-top: 30px;
+		}
+
+
+}
+
 
