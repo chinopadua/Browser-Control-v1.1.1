@@ -99,10 +99,9 @@
 			color:#d3d3d3;
 		}
 
-		.form4 .okbutton:focus,
+		.form .okbutton:focus,
 		.form .okbutton:hover {
 			border-color: #11CA66;
-			color:#11CA66;
 		}
 
 		.form .cancelbutton {
@@ -116,6 +115,82 @@
 
 		.form .cancelbutton:focus,
 		.form .cancelbutton:hover {
+			border-color: #CA1111;
+		}
+
+
+
+
+
+
+
+
+
+
+
+		.form2 input[type="text"],
+		.form2 input[type="password"] {
+			padding: 10px;
+			width: 100%;
+			border: 2px solid #D3D3D3;
+			background: transparent;
+			color: #11CA66;
+			font-weight: 300;
+			font-size: 1.2em;
+		}
+
+		.form2 input[type="text"]:focus,
+		.form2 input[type="password"]:focus {
+			border-color: #11CA66;
+			color: #11CA66;
+		}
+
+		.form2 input:focus {
+			outline: 0;
+		}
+
+		.form2 button {
+			display: block;
+			margin-top: 1em;
+			padding: .6em;
+			width: 100%;
+			border: none;
+			color: #2D2D2D;
+			font-size: 1em;
+			-webkit-appearance: button;
+			cursor: pointer;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}	
+
+		
+		.form2 .okbutton {
+			border: 2px solid #d3d3d3;
+			background-color: transparent;
+			border-color: #d3d3d3;
+			max-width: 250px;
+			min-width: 100px;
+			color:#d3d3d3;
+		}
+
+		.form2 .okbutton:focus,
+		.form2 .okbutton:hover {
+			border-color: #11CA66;
+			color:#11CA66;
+		}
+
+		.form2 .cancelbutton {
+			border: 2px solid #d3d3d3;
+			background-color: transparent;
+			border-color: #d3d3d3;
+			max-width: 250px;
+			min-width: 100px;
+			color:#d3d3d3;
+		}
+
+		.form2 .cancelbutton:focus,
+		.form2 .cancelbutton:hover {
 			border-color: #CA1111;
 			color:#CA1111;
 		}

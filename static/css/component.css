@@ -1014,30 +1014,34 @@ hr {
 
 		}
 
-		.content-style-form-4 .okbutton {
+		.content-style-form-4 .okbuttonm {
 			border: 2px solid #D3D3D3;
 			background-color: transparent;
 			border-color: #11CA66;
 			max-width: 250px;
 			min-width: 100px;
+			color:#f2f2f2;
 		}
 
-		.content-style-form-4 .okbutton:focus,
-		.content-style-form-4 .okbutton:hover {
+		.content-style-form-4 .okbuttonm:focus,
+		.content-style-form-4 .okbuttonm:hover {
 			background: #11CA66;
+			color:#f2f2f2;
 		}
 
-		.content-style-form-4 .cancelbutton {
+		.content-style-form-4 .cancelbuttonm {
 			border: 2px solid #CA1111;
 			background-color: transparent;
 			border-color: #CA1111;
 			max-width: 250px;
 			min-width: 100px;
+			color:#f2f2f2;
 		}
 
-		.content-style-form-4 .cancelbutton:focus,
-		.content-style-form-4 .cancelbutton:hover {
+		.content-style-form-4 .cancelbuttonm:focus,
+		.content-style-form-4 .cancelbuttonm:hover {
 			background: #CA1111;
+			color:#f2f2f2;
 		}
 
 		.content-style-form input[type="file"] {
@@ -1722,3 +1726,106 @@ padding: 0 2em 3em;
 .connected h3 {
 	color:#11CA66;
 }
+
+.notconnected {
+	line-height: 1.5em;
+	margin: 0 auto 1em;
+	width: 90%;
+	max-width: 900px;
+	overflow: hidden;
+	padding-bottom: 22px;
+	border: 2px solid #CA1111;
+	background-color: transparent;
+	border-radius: 1%;
+}
+
+.notconnected h3 {
+	color:#CA1111;
+}
+
+.editquick {
+
+}
+
+.editquick label {
+	font-size: 1.3em;
+	font-weight: 800;
+}
+
+.password {
+	font-weight: 300;
+	font-size: 1.2em;
+	margin-top: 20px;
+}
+
+
+		.editquick input[type="text"],
+		.editquick input[type="password"] {
+			padding: 10px;
+			width: 100%;
+			border: 2px solid #D3D3D3;
+			background: transparent;
+			color: #11CA66;
+			font-weight: 300;
+			font-size: 1.2em;
+		}
+
+		.editquick input[type="text"]:focus,
+		.editquick input[type="password"]:focus {
+			border-color: #11CA66;
+			color: #11CA66;
+		}
+
+		.editquick input:focus {
+			outline: 0;
+		}
+
+		.editquickbutton {
+		float: right;
+		margin-left: 10px;
+		}
+
+		.editquick button {
+			margin-top: 1em;
+			padding: .6em;
+			width: 100%;
+			border: none;
+			color: #2D2D2D;
+			font-size: 1em;
+			-webkit-appearance: button;
+			cursor: pointer;
+			-webkit-transition: all 0.3s;
+			-moz-transition: all 0.3s;
+			transition: all 0.3s;
+		}	
+
+		
+		.editquick .okbutton {
+			border: 2px solid #d3d3d3;
+			background-color: transparent;
+			border-color: #d3d3d3;
+			max-width: 250px;
+			min-width: 100px;
+			color:#d3d3d3;
+		}
+
+		.editquick .okbutton:focus,
+		.editquick .okbutton:hover {
+			border-color: #11CA66;
+			color:#11CA66;
+		}
+
+		.editquick .cancelbutton {
+			border: 2px solid #d3d3d3;
+			background-color: transparent;
+			border-color: #d3d3d3;
+			max-width: 250px;
+			min-width: 100px;
+			color:#d3d3d3;
+		}
+
+		.editquick .cancelbutton:focus,
+		.editquick .cancelbutton:hover {
+			border-color: #CA1111;
+			color:#11CA66;
+		}
